@@ -14,7 +14,18 @@ const Calendar = () => {
     let days = Object.keys(localStorage);
   
     days.forEach((dayKey) => { 
-      const obj = JSON.parse(localStorage.getItem(dayKey));
+      const obj = {};
+      try{
+        const storedData = localStorage.getItem(dayKey)
+        if(storedData){
+          console.log("stored data is ",storedData);
+          obj = JSON.parse(storedData);
+        }else{
+          console.log("no data stored");
+        }
+      }catch(error){
+        console.error(error.message);
+      }
       const day = new Date(dayKey);
   
       if (
