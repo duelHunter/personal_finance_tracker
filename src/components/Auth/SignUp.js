@@ -19,12 +19,12 @@ export default function SignUp() {
             const authInfo = {          
             }
 
-            navigate('/Home');
+            navigate('/Converter');
         }catch(error){
             console.error(error.message);
         }
     };
-    //dsdsf
+   
 
     const signUPfunc = async(email, password) => {
         try{
