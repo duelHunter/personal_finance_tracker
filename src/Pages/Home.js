@@ -117,9 +117,19 @@ const Home = () => {
     let monthlyExpenseTotal = 0;
 
     let days = Object.keys(localStorage);
-
+    const obj = {};
     days.forEach((dayKey) => {
-      const obj = JSON.parse(localStorage.getItem(dayKey));
+      try{
+        const storedData = localStorage.getItem(dayKey);
+        if(storedData){
+          obj = JSON.parse(storedData);
+        }else{
+          console.log('no data stored');
+        }
+
+      }catch(error){
+        console.error(error.message);
+      }
       const day = new Date(dayKey);
 
       if (

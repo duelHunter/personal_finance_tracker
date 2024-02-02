@@ -27,10 +27,16 @@ export default function Transaction() {
 
   }
   const listMaker = () => {
+    const listData = [];
     const objArry = Object.keys(localStorage);
     const fullTable = [];
     objArry.forEach(day => {
-      const listData = JSON.parse(localStorage.getItem(day));
+      try{
+        const storedData = localStorage.getItem(day);
+        listData = JSON.parse(storedData);
+      }catch(error){
+        console.error(error.message);
+      }
       const rowData = [];
       rowData.push(
       <td>{iconMap[listData.category]}{listData.category}</td>,

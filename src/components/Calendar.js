@@ -66,12 +66,12 @@ const Calendar = () => {
     while (startDate <= endDate) {
       const week = [];
       for (let i = 0; i < 7; i++) {
-        daily_In_Ex(startDate);
+        // daily_In_Ex(startDate);
         week.push(
           <td key={startDate.toDateString()} className={startDate.toDateString() === currentDate.toDateString() ? 'today' : ''}>
             {startDate.getDate()}
-            <p>Income {dailyIncome}</p>
-            <p>Expense {dailyExpense}</p>
+            {/* <p>Income {dailyIncome}</p>
+            <p>Expense {dailyExpense}</p> */}
           </td>
         );
         startDate.setDate(startDate.getDate() + 1);

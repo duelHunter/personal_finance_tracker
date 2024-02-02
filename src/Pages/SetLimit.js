@@ -105,11 +105,17 @@ export default function SetLimit() {
     },[updatedExpenseNameObj]);
   /////////////////////////////////////////////specified expense calculate
   const selectedExpenseCalculate = (whichMonth, key) => {
-
+    const obj = {};
     let days = Object.keys(localStorage);
     let totalExpense = 0
     days.forEach((dayKey) => {
-      const obj = JSON.parse(localStorage.getItem(dayKey));
+     
+      try{
+        const storedData = localStorage.getItem(dayKey);
+        obj = JSON.parse(storedData);
+      }catch(error){
+        console.error(error.message);
+      }
       const day = new Date(dayKey);
 
       if (
