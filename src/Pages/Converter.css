@@ -1,0 +1,115 @@
+.converter-page {
+    height: 100vh;
+    background-image: url("../assets/images/converter_back.JPG");
+    background-size: cover;
+    overflow: hidden;
+}
+.converter-container{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    background-image: linear-gradient(180deg, #e7e6c0d6, #81cb09df);
+    height:90vh;
+    padding-top: 8vh;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    height: 70vh;
+    box-shadow: 0 8px 50px -8px rgba(0, 0, 0, 0.3);
+    padding:16px;
+    border: 2px solid #505050c1;
+    border-radius: 12px;
+    font-family: "Times New Roman" ,sans-serif;
+    background-color: #DADABA;
+}
+
+.converter-container h2{
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight:bold;
+    position: relative;
+    text-decoration:underline;
+}
+
+/*.converter-container h2::after{
+    position:absolute;
+    content: "";
+    height: 4px;
+    width: 260px;
+    left:0;
+    bottom: -6px;
+    background: #ef233c;
+ 
+}*/
+
+.converter-container .content{
+    display: flex;
+    flex-direction:column;
+    gap: 8px;
+    color:#5e0505;
+}
+
+.converter-container input,
+.converter-container select {
+        padding: 8px 16px;
+        font-family: 'Times New Roman',sans-serif;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid #1d3461;
+        appearance: none;
+        background-color:#e9ebf0;
+    }
+
+.converter-container input{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 12px 16px;
+    background-color:#D1D6A2;
+}
+
+.converter-container .select-container{
+    display: flex;
+
+}
+
+.converter-container .select-container select{
+    width: 100%;
+    margin-block: 4px;
+    background-color:#D1D6A2;
+}
+
+.converter-container .swap-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.swap-btn:hover{
+    color: #2ecc71;
+}
+
+
+.converter-container .result{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-block: 16px;
+    background: #C9CF65;
+    color: #eaf4f4;
+    border-radius: 8px;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
+
+.converter-container .result-currency{
+    font-size: 24px;
+    text-transform: uppercase;
+}

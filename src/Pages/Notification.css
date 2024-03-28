@@ -1,0 +1,37 @@
+.seting-page {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.setting-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5vh;
+  background-color: #DADABA;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.download-all {
+  background-color: #DADABA;
+  color: black;
+  border: 1px solid black;
+}
+
+.reset-data{
+  background-color: #DADABA;
+  color: red;
+  border: none;
+}

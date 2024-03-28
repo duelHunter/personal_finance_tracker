@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+  background-image: linear-gradient(180deg, #E7E5C0, #47CB09);
+  min-height: 100vh;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.left{
+    width: 60vw;
+    padding-right: 10px;
+}
+
+.right{
+    border: 2px solid #5050508a;
+    border-radius: 10px;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding-top: 20px;
+}
+
+#myChart{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
+
+
+
+.addNew {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: black;
+  background: #D7C57D;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
+.addNew:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  background-color: #988c5c;
+}
+
+.doughnut{
+  width: 25vw;
+}
+
+.doughnut canvas{
+  color: white;
+}
+
+.modal-content div, form, label, option{
+  background-color: #f0f0f0; 
+}
+
+.modal-content input{
+  background-color: white;
+}
+.fade{
+  background-color: rgba(92, 92, 92, 0.3);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #02411623;
+  height: fit-content;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+/*.........................fonts....................................*/
+.inria-sans-light {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inria-sans-light-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inria-sans-regular {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inria-sans-regular-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inria-sans-bold {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inria-sans-bold-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}

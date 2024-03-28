@@ -1,0 +1,48 @@
+.setlimit-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-top: 20px;
+}
+
+.progressBar {
+    width: 30vw;
+    color: rgb(0, 0, 0);
+}
+  
+.progressBar .progress {
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+  
+.progressBar .progress-bar {
+    border-radius: 0px;
+    background: linear-gradient(to right, #4caf50, #0081ff);
+}
+  
+.expense-doughnut{
+    border: 2px solid #5050508a;
+    border-radius: 10px;
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*..........................Fonts*/
+
+.source-serif4-para {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    color: rgb(77, 77, 77);
+  }

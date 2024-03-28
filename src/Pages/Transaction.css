@@ -1,0 +1,24 @@
+#transPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#transTable{
+    width: 80vw;  
+}
+#transTable td {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-color: rgb(250, 252, 211);
+}
+#transTable tr{
+    height: 10vh;
+
+}
+
+#transTable tr:hover {
+    background-color: #c1ec2461;
+}
+
