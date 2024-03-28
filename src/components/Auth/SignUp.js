@@ -24,6 +24,7 @@ export default function SignUp() {
             console.error(error.message);
         }
     };
+    //dsdsf
 
     const signUPfunc = async(email, password) => {
         try{
