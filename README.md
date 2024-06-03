@@ -49,7 +49,7 @@ You need to set up Firebase for this app. Follow these steps:
 
 1. **Create a Firebase project**:
 
-    * Go to Firebase [Console](https://console.firebase.google.com/).
+    * Go to Firebase <a href="https://console.firebase.google.com/" target = "_blank">Console</a>.
     * Click on "Add Project" and follow the steps to create a new project.
 2. **Add a web app to your Firebase project**:
 
